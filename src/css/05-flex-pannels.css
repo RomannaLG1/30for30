@@ -16,8 +16,6 @@
   color: white;
   text-align: center;
   align-items: center;
-  /* transition: font-size 250ms cubic-bezier(0.075, 0.82, 0.165, 1),
-    flex-grow 250ms cubic-bezier(0.075, 0.82, 0.165, 1), background 250ms; */
   transition: font-size 500ms ease-out, flex-grow 500ms ease-out,
     background 500ms ease-out;
   font-size: 20px;
