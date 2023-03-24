@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Variables</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/03-css-variables.css" />
+  </head>
+  <body class="css-variables-body">
+    <main class="css-variables-main">
+      <p><a href="index.html">Go back</a></p>
+
+      <h2>Update CSS variables with <span class="hl">JS</span></h2>
+      <div class="controls">
+        <label for="spacing">Spacing: </label>
+        <input
+          type="range"
+          name="spacing"
+          min="10"
+          max="200"
+          value="10"
+          data-sizing="px"
+        />
+
+        <label for="blur">Blur: </label>
+        <input
+          type="range"
+          name="blur"
+          min="0"
+          max="25"
+          value="0"
+          data-sizing="px"
+        />
+
+        <label for="base">Base color: </label>
+        <input type="color" name="base" value="#ffc600" />
+      </div>
+      <img class="css-img" src="./images/JyeBAJH.png" alt="kookaburras" />
+    </main>
+
+    <script src="js/03-css-variables.js" type="module"></script>
+  </body>
+</html>

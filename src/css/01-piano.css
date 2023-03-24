@@ -1,0 +1,80 @@
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+:root {
+  --clr-1: #052b2f;
+  --clr-2: #073438;
+  --clr-3: #ff6600;
+  --clr-4: #ffee00;
+  --clr-5: #eeffff;
+}
+.body {
+  background: var(--clr-1);
+}
+.container {
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.key {
+  aspect-ratio: 1 / 1.5;
+  background: var(--clr-2);
+  border-radius: 0.5rem;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  box-shadow: inset 1px 1px 8px #000000;
+  color: #ff6600;
+  width: 50px;
+  height: 150px;
+
+  font-size: 1.5rem;
+  width: 100px;
+  text-transform: uppercase;
+
+  line-height: 150px;
+
+  cursor: pointer;
+  transition: all 0.09s;
+}
+.key::before,
+.key::after {
+  content: '';
+  position: absolute;
+  inset: -0.1rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 15s linear infinite;
+}
+
+.key::after {
+  filter: blur(3.5rem);
+}
+
+.playing {
+  transform: scale(1.1);
+  background-color: #ffc600;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
