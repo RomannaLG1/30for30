@@ -1,0 +1,2 @@
+const e=document.querySelector(".second-hand"),t=document.querySelector(".min-hand"),n=document.querySelector(".hour-hand");setInterval((function(){const o=new Date,r=o.getSeconds()/60*360+90;e.style.transform=`rotate(${r}deg)`;const s=o.getMinutes(),c=s/60*360+90;t.style.transform=`rotate(${c}deg)`;const a=o.getHours()/12*360+s/60*30+90;n.style.transform=`rotate(${a}deg)`}),1e3);
+//# sourceMappingURL=02-clock.ad20eac7.js.map

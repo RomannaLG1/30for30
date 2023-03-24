@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".panel");function t(){e.forEach((e=>{e!==this&&e.classList.contains("open")&&e.classList.remove("open")})),this.classList.toggle("open")}function n(e){"flex-grow"===e.propertyName&&this.classList.toggle("open-active")}e.forEach((e=>e.addEventListener("click",t))),e.forEach((e=>e.addEventListener("transitionend",n)));
+//# sourceMappingURL=05-flex-pannels.b7cac127.js.map

@@ -1,0 +1,2 @@
+!function(){var n=document.querySelectorAll(".panel");function t(){var t=this;n.forEach((function(n){n!==t&&n.classList.contains("open")&&n.classList.remove("open")})),this.classList.toggle("open")}function e(n){"flex-grow"===n.propertyName&&this.classList.toggle("open-active")}n.forEach((function(n){return n.addEventListener("click",t)})),n.forEach((function(n){return n.addEventListener("transitionend",e)}))}();
+//# sourceMappingURL=05-flex-pannels.056e1015.js.map

@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll(".controls input");document.querySelector(".css-img");function t(){var e=this.dataset.sizing||"";document.documentElement.style.setProperty("--".concat(this.name),this.value+e)}e.forEach((function(e){return e.addEventListener("change",t)})),e.forEach((function(e){return e.addEventListener("mousemove",t)}))}();
+//# sourceMappingURL=03-css-variables.6d0ab477.js.map
